@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Happy Birthday, Varsha</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="confetti-layer" id="confettiLayer"></div>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="hero-inner">
+    <p class="kicker">wishing you the happiest of</p>
+    <h1>Happy Birthday,<br>Varsha</h1>
+    <p class="sub">A little corner of the internet, made just for you. Scroll down &mdash; there's a wall, a cake, and a wish waiting.</p>
+    <div class="scroll-cue" aria-hidden="true">
+      <span></span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CORKBOARD WALL ===== -->
+<section class="wall-section">
+  <div class="wall-heading">
+    <p class="kicker light">a little gallery</p>
+    <h2>Pinned, just for you</h2>
+  </div>
+
+  <div class="corkboard" id="corkboard">
+    <!-- Each .pin is one photo + one wooden clip.
+         Swap the filenames in images/wall/ with your own photos —
+         keep the same file names or edit the src below. -->
+    <figure class="pin r1"><span class="clip"></span><img src="images/wall/wall-1.jpeg" alt="Photo with Varsha"></figure>
+    <figure class="pin r2"><span class="clip"></span><img src="images/wall/wall-2.jpg" alt="Photo with Varsha"></figure>
+    <figure class="pin r3"><span class="clip"></span><img src="images/wall/wall-3.jpg" alt="Photo with Varsha"></figure>
+    <figure class="pin r4"><span class="clip"></span><img src="images/wall/wall-4.jpg" alt="Photo with Varsha"></figure>
+    <figure class="pin r5"><span class="clip"></span><img src="images/wall/wall-5.png" alt="Photo with Varsha"></figure>
+    <figure class="pin r6"><span class="clip"></span><img src="images/wall/wall-6.png" alt="Photo with Varsha"></figure>
+    <figure class="pin r7"><span class="clip"></span><img src="images/wall/wall-7.png" alt="Photo with Varsha"></figure>
+    <figure class="pin r8"><span class="clip"></span><img src="images/wall/wall-8.png" alt="Photo with Varsha"></figure>
+  </div>
+</section>
+
+<!-- ===== CAKE + WISHES ===== -->
+<section class="cake-section">
+  <p class="kicker">make a wish</p>
+  <h2>Five candles, five wishes</h2>
+  <p class="sub">Touch each candle. One wish, one flame.</p>
+
+  <div class="cake-wrap">
+    <svg id="cake" viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Birthday cake with five candles">
+      <g>
+        <path class="flame" data-idx="0" tabindex="0" role="button" aria-label="Wish 1: may you get love of your life"
+          d="M42 58 C 38 50, 38 44, 42 38 C 46 44, 46 50, 42 58 Z" fill="#F0C989"/>
+        <path class="flame" data-idx="1" tabindex="0" role="button" aria-label="Wish 2: may you get your own house"
+          d="M90 52 C 86 44, 86 38, 90 32 C 94 38, 94 44, 90 52 Z" fill="#F0C989"/>
+        <path class="flame" data-idx="2" tabindex="0" role="button" aria-label="Wish 3: may you get the happiness you deserve"
+          d="M160 48 C 156 40, 156 34, 160 28 C 164 34, 164 40, 160 48 Z" fill="#F0C989"/>
+        <path class="flame" data-idx="3" tabindex="0" role="button" aria-label="Wish 4: may you complete all your dreams"
+          d="M230 52 C 226 44, 226 38, 230 32 C 234 38, 234 44, 230 52 Z" fill="#F0C989"/>
+        <path class="flame" data-idx="4" tabindex="0" role="button" aria-label="Wish 5: may all your dreams come true"
+          d="M278 58 C 274 50, 274 44, 278 38 C 282 44, 282 50, 278 58 Z" fill="#F0C989"/>
+      </g>
+      <g>
+        <ellipse class="smoke" data-idx="0" cx="42" cy="46" rx="4" ry="10" fill="#D9AEBB"/>
+        <ellipse class="smoke" data-idx="1" cx="90" cy="40" rx="4" ry="10" fill="#D9AEBB"/>
+        <ellipse class="smoke" data-idx="2" cx="160" cy="36" rx="4" ry="10" fill="#D9AEBB"/>
+        <ellipse class="smoke" data-idx="3" cx="230" cy="40" rx="4" ry="10" fill="#D9AEBB"/>
+        <ellipse class="smoke" data-idx="4" cx="278" cy="46" rx="4" ry="10" fill="#D9AEBB"/>
+      </g>
+
+      <rect x="39" y="58" width="6" height="24" rx="1.5" fill="#E8768C"/>
+      <rect x="87" y="52" width="6" height="30" rx="1.5" fill="#E3A857"/>
+      <rect x="157" y="48" width="6" height="34" rx="1.5" fill="#E8768C"/>
+      <rect x="227" y="52" width="6" height="30" rx="1.5" fill="#E3A857"/>
+      <rect x="275" y="58" width="6" height="24" rx="1.5" fill="#E8768C"/>
+
+      <rect x="70" y="82" width="180" height="32" rx="6" fill="#4A2740"/>
+      <path d="M70 92 q 15 -8 30 0 q 15 8 30 0 q 15 -8 30 0 q 15 8 30 0 q 15 -8 30 0 q 15 8 30 0 l0 22 -180 0 0 -22z" fill="#5A3050"/>
+
+      <rect x="20" y="114" width="280" height="54" rx="8" fill="#341A2F"/>
+      <path d="M20 126 q 23 -10 46 0 q 23 10 46 0 q 23 -10 46 0 q 23 10 46 0 q 23 -10 46 0 q 23 10 46 0 l0 -12 -280 0z" fill="#4A2740"/>
+
+      <ellipse cx="160" cy="172" rx="146" ry="11" fill="#22101E"/>
+      <ellipse cx="160" cy="169" rx="146" ry="10" fill="#E3A857" opacity="0.85"/>
+    </svg>
+  </div>
+
+  <p class="hint" id="hint">tap each candle to make your wish</p>
+
+  <ul class="wish-list" id="wishList" aria-live="polite">
+    <li data-idx="0">may you get the love of your life</li>
+    <li data-idx="1">may you get your own house</li>
+    <li data-idx="2">may you get the happiness you deserve</li>
+    <li data-idx="3">may you complete all your dreams</li>
+    <li data-idx="4">may all your dreams come true</li>
+  </ul>
+
+  <button class="reset" id="resetBtn">light the candles again</button>
+</section>
+
+<!-- ===== MEMORIES REVEAL ===== -->
+<section class="memories-section" id="memoriesSection">
+  <div class="memories-heading">
+    <p class="kicker light">after the wishes</p>
+    <h2>Us, through the years</h2>
+    <p class="sub">Some of my favourites, from you and me and all of us together.</p>
+  </div>
+
+  <div class="memories-grid">
+    <!-- Swap the filenames in images/memories/ with your own group photos -->
+    <figure class="polaroid p1"><img src="images/memories/memory-2.jpeg" alt="Memory together"><figcaption>2022</figcaption></figure>
+    <figure class="polaroid p2"><img src="images/memories/memory-1.jpeg" alt="Memory together"><figcaption>2023</figcaption></figure>
+    <figure class="polaroid p3"><img src="images/memories/memory-3.jpeg" alt="Memory together"><figcaption>college days</figcaption></figure>
+    <figure class="polaroid p4"><img src="images/memories/memory-4.jpeg" alt="Memory together"><figcaption>the squad</figcaption></figure>
+    <figure class="polaroid p5"><img src="images/memories/memory-5.jpg" alt="Memory together"><figcaption>best days</figcaption></figure>
+    <figure class="polaroid p6"><img src="images/memories/memory-6.jpg" alt="Memory together"><figcaption>3 of us in our prime</figcaption></figure>
+  </div>
+
+  <p class="closing">Here's to more years of us. I love you, happy birthday. 🤍</p>
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>
